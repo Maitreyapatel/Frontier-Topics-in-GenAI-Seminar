@@ -1,0 +1,69 @@
+---
+layout: base
+---
+
+<!-- 1. Seminar details and motivation
+2. Scheduler rendering from the _talks 
+3. Organizers details -->
+
+<div>
+    <h1 class="page-heading">Introduction</h1>
+    <p>{{ site.detailed_description }}</p>
+</div>
+
+<div>
+    <h1 class="page-heading" style="text-align: center;">Schedule</h1>
+    <hr>
+    <br>
+
+    {% assign talks = site.talks %}
+    {%- for talk in talks -%}
+
+    <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+            <img src="{{talk.photo}}" width="128" height="128">
+        </div>
+
+        <div class="footer-col footer-col-12">
+            <b style="font-size: 21px;"><a href="{{ talk.Profile }}">{{ talk.Name }}</a></b></br>
+            <b>{{ talk.Affilication }}</b></br>
+
+            <p><b>Title: </b>{{ talk.Title }}</p>
+            <p>{{ talk.Details }}</p>
+        </div>
+
+        <div class="footer-col footer-col-1">
+            <p><b>Date:</b> {{ talk.Date }} <br> <b>Time:</b> {{ talk.Time }} <br> <b>Location:</b> {{ talk.Location }}
+            </p>
+        </div>
+
+        <!-- <div class="footer-col footer-col-3"></div> -->
+    </div>
+    <hr>
+    <br>
+
+    {%- endfor -%}
+
+
+</div>
+
+<div>
+    <h1 class="page-heading">Organizers</h1>
+
+    {% assign orgs = site.orgs %}
+
+    <div class="footer-col-wrapper">
+        {%- for person in orgs -%}
+
+
+        <div class="footer-col footer-col-1">
+            <center>
+                <img src="{{ person.photo }}" width="128" height="128"></br>
+                <b><a href="{{ person.profile }}">{{ person.name }}</a></b>
+            </center>
+        </div>
+
+        {%- endfor -%}
+    </div>
+
+</div>
