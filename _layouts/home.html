@@ -2,13 +2,20 @@
 layout: base
 ---
 
-<!-- 1. Seminar details and motivation
-2. Scheduler rendering from the _talks 
-3. Organizers details -->
 
 <div>
     <h1 class="page-heading">Introduction</h1>
-    <p>{{ site.detailed_description }}</p>
+    <p>In the ever-evolving landscape of Vision and Language, we witness exponential growth, notably in tasks like
+        text-to-image, video generation, and multimodal reasoning. Applied research thrives, yet it is imperative to
+        spotlight foundational works.</p>
+
+    <p>Introducing the Vision-Language Seminar Series—a focused exploration of grounded research in vision, language,
+        and multimodal systems. Join us in unraveling the core principles propelling innovation, as we navigate the
+        intersections of vision and language, shaping the future of this dynamic field.</p>
+
+    <p>Embark on this journey with us, as we delve into fundamental insights that drive the forefront of Vision and
+        Language research. Together, let's chart a course for a future where foundational knowledge continues to fuel
+        innovation.</p>
 </div>
 
 <div>
@@ -60,6 +67,7 @@ layout: base
             <center>
                 <img src="{{ person.photo }}" width="128" height="128"></br>
                 <b><a href="{{ person.profile }}">{{ person.name }}</a></b>
+                <p>{{ person.position }} </br> {{ person.affiliation }}</p>
             </center>
         </div>
 

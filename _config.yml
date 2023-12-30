@@ -22,7 +22,6 @@ title: Vision-Language Seminar (Spring'24)
 email: maitreya.patel@asu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   ASU-APG seminar series on Vision-Langauge (Spring'24).
-detailed_description: Vision and Language has been growing explonentially in past couple of years. Lot's of cool downstream tasks are becoming better and better such as text-to-image/video/3D generations, multimodal reasoning, and human-alignment. Hence, there is a lot of focus on applied research. But it's important to also focus on fundamental works driving the research. With this goal, we present the Vision-Language seminar series. This seminar will focus on more grounded research works in vision, language and multimodal systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ApgAsu
