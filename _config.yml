@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Vision-Language Seminar (Spring'24)
-email: maitreya.patel@asu.edu
+title: Frontier Topics in GenAI Seminar (Spring'24)
+email: maitreya.patel@asu.edu, scheng53@asu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  ASU-APG seminar series on Vision-Langauge (Spring'24).
+  ASU-APG seminar series on Generative AI (Spring'24).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vision-language-seminar.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ApgAsu

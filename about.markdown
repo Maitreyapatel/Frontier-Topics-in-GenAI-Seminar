@@ -7,7 +7,7 @@ permalink: /about/
 ASU Active Perception Group (APG) is lead by ['YZ' Yezhou Yang](https://yezhouyang.engineering.asu.edu/).
 ASU-APG focuses on diverse active-perception research fileds:
 * Generative Modeling
-* Visual Nevigation
+* Visual Navigation
 * Intelligent Transportation
 
 In generative modeling, the group is working on various important research problems:
