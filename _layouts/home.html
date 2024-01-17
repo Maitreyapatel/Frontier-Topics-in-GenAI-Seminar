@@ -22,7 +22,7 @@ layout: base
 </div>
 
 <div>
-    <h1 class="page-heading" style="text-align: center;">Schedule -- TBD</h1>
+    <h1 class="page-heading" style="text-align: center;">Schedule</h1>
     <hr>
     <br>
 
@@ -32,30 +32,36 @@ layout: base
     <div class="footer-col-wrapper">
         <div class="footer-col footer-col-1">
             <img src="{{talk.photo}}" width="128" height="128">
+            <br>
+            <p>
+                <b>Date:</b> {{ talk.Date }}
+                <br>
+                <b>Time:</b> {{ talk.Time }}
+                <br>
+                <b>Location:</b> {{ talk.Location }}
+                <br>
+                <b>Zoom: </b> <a href="{{ talk.ZoomLink }}">Link</a>
+            </p>
+            </p>
+            <br>
+            <img src="{{talk.aff_photo}}" width="128">
         </div>
 
-        <div class="footer-col footer-col-12">
+        <div class="footer-col footer-col-3" style="width:60%">
             <b style="font-size: 21px;"><a href="{{ talk.Profile }}">{{ talk.Name }}</a></b></br>
             <b>{{ talk.Affilication }}</b></br>
 
             <p><b>Title: </b>{{ talk.Title }}</p>
-            <p>{{ talk.Details }}</p>
+            <p><b>Abstract: </b>{{ talk.Details }}</p>
         </div>
 
-        <div class="footer-col footer-col-1">
-            <p><b>Date:</b> {{ talk.Date }} <br> <b>Time:</b> {{ talk.Time }} <br> <b>Location:</b> {{ talk.Location }}
-            </p>
-        </div>
 
-        <!-- <div class="footer-col footer-col-3"></div> -->
+
     </div>
     <hr>
     <br>
 
     {%- endfor -%}
-
-    <hr>
-    <br>
 
 
 </div>
