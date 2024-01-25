@@ -26,6 +26,7 @@ layout: base
 </div>
 
 <div>
+    <br>
     <h1 class="page-heading" style="text-align: center;">Schedule</h1>
     <hr>
     <br>
@@ -33,11 +34,12 @@ layout: base
     {% assign talks = site.talks %}
     {%- for talk in talks -%}
 
-    <div class="footer-col-wrapper">
+    <div class="footer-col-wrapper" style="{{talk.style}}">
         <div class="footer-col footer-col-1">
             <img src="{{talk.photo}}" width="128" height="128">
             <br>
             <p>
+                <br>
                 <b>Date:</b> {{ talk.Date }}
                 <br>
                 <b>Time:</b> {{ talk.Time }}
@@ -79,7 +81,7 @@ layout: base
         {%- for person in orgs -%}
 
 
-        <div class="footer-col footer-col-1">
+        <div class="footer-col" style="padding: 50px;">
             <center>
                 <img src="{{ person.photo }}" width="128" height="128"></br>
                 <b><a href="{{ person.profile }}">{{ person.name }}</a></b>
